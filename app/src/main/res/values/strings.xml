@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Universitiesadmin</string>
+    <string-array name="jntuTypes">
+        <item>JNTUNOTIFICATIONS</item>
+        <item>JNTURESULTS</item>
+        <item>JNTUACADEMICCALENDER</item>
+        <item>JNTUSYLLABUS</item>
+        <item>JNTUTIMETABLE</item>
+        <item>JNTUOLDQUESTIONPAPERS</item>
+        <item>JOBUPDATES</item>
+        <item>EVENTS</item>
+        <item>OFFCAMPUSDRIVES</item>
+        <item>IBPS</item>
+    </string-array>
+
+</resources>

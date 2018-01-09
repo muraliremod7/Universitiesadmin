@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/jntutype"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:entries="@array/jntuTypes">
+        </Spinner>
+        <RadioGroup
+            android:gravity="center"
+            android:id="@+id/jntuselection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/jntuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JNTUK"
+                />
+            <RadioButton
+                android:id="@+id/jntua"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JNTUA"
+                />
+            <RadioButton
+                android:id="@+id/jntuh"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JNTUH"
+                />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/nsubject"
+            android:hint="Enter Subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:hint="Enter Description"
+            android:id="@+id/ndescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:hint="Enter img url"
+            android:id="@+id/nimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:hint="Enter Web link"
+            android:id="@+id/nweblink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
